@@ -3,7 +3,7 @@ const container = document.getElementsByClassName('container');
 let page = 0; // 영역 포지션 초기값
 const lastPage = container.length - 1; // 마지막 페이지
 
-window.addEventListener('wheel',(e)=>{
+window.addEventListener('scroll',(e)=>{
     e.preventDefault();
     if(e.deltaY > 0){
         page++;
